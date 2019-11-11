@@ -61,3 +61,20 @@ const people = [
     'Blake, William'
   ];
   
+// 6. Sort the people array alphabetically by last name
+const sortedLastName = people.sort((a, b) => {
+    return a.split(', ')[1][0].charCodeAt(0) - b.split(', ')[1][0].charCodeAt(0)
+})
+
+// console.log(sortedLastName)
+// console.log('Becker, Carl'.split(', ')[1][0])
+
+const data = [
+    'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
+    'bike', 'walk', 'car', 'van', 'car', 'truck'
+];
+
+// 7. Count the number of instances for each of the data items.
+// Hint:  Return an object where the keys are 'car', 'truck', etc. and the values are the count.
+
+
