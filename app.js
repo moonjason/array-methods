@@ -123,9 +123,10 @@ const idFind = comments.find(comment => {
 // console.log(idFind)
 
 const idEvery = comments.findIndex(comment => {
-    
+    return comment.id === 123523
 })
   
+// console.log(idEvery)
 
 
 
