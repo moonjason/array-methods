@@ -20,6 +20,10 @@ const x = inventors.filter(elem =>
 )
 // console.log(x)
 // 2. Give us an array of the inventors' first and last names
-const y = inventors
+const y = inventors.map(elem =>{
+    return {first: elem.first, last: elem.last}
+})
+
+console.log(y)
 
 // 3. Sort the inventors by birthdate, oldest to youngest
