@@ -30,6 +30,11 @@ const y = inventors.map(elem =>{
 const z = inventors.sort((a, b) => {
     return b.year - a.year
 })
-console.log(z)
+// console.log(z)
 
 // 4. Sort the inventors by years lived
+const yearsLived = inventors.sort((a, b) => {
+    return (b.passed - b.year) - (a.passed - a.year)
+})
+
+console.log(yearsLived)
