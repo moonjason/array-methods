@@ -90,10 +90,13 @@ const devs = [
     { name: 'Lux', year: 2015 }
   ];
   
-  // Array.prototype.some()
-  // 8. Is at least one person 19 or older?
-  
-  
+// Array.prototype.some()
+// 8. Is at least one person 19 or older?
+const nineteen = devs.some(devs => {
+    return 2019 - devs.year >= 19
+})
+
+console.log(nineteen)
   
   // Array.prototype.every()
   // 9. Is everyone 19 or older?
