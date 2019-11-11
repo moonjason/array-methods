@@ -76,5 +76,26 @@ const data = [
 
 // 7. Count the number of instances for each of the data items.
 // Hint:  Return an object where the keys are 'car', 'truck', etc. and the values are the count.
+const reducedData = data.reduce((acc, data) => {
+    acc.hasOwnProperty(data) ? acc[data] += 1 : acc[data] = 1;
+    return acc;
+}, {})
 
+// console.log(reducedData);
 
+const devs = [
+    { name: 'Wes', year: 1988 },
+    { name: 'Kait', year: 1986 },
+    { name: 'Irv', year: 1970 },
+    { name: 'Lux', year: 2015 }
+  ];
+  
+  // Array.prototype.some()
+  // 8. Is at least one person 19 or older?
+  
+  
+  
+  // Array.prototype.every()
+  // 9. Is everyone 19 or older?
+  
+  
