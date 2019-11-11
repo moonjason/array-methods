@@ -37,4 +37,27 @@ const yearsLived = inventors.sort((a, b) => {
     return (b.passed - b.year) - (a.passed - a.year)
 })
 
-console.log(yearsLived)
+// console.log(yearsLived)
+
+// 5. How many years did all the inventors live?
+const totalLived = inventors.reduce((acc, elem) => {
+    acc += (elem.passed - elem.year);
+    return acc;
+}, 0)
+
+// console.log(totalLived)
+
+const people = [
+    'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry',
+    'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul',
+    'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David',
+    'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana',
+    'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar',
+    'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric',
+    'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell',
+    'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph',
+    'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank',
+    'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony',
+    'Blake, William'
+  ];
+  
