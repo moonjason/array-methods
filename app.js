@@ -24,6 +24,12 @@ const y = inventors.map(elem =>{
     return {first: elem.first, last: elem.last}
 })
 
-console.log(y)
+// console.log(y)
 
 // 3. Sort the inventors by birthdate, oldest to youngest
+const z = inventors.sort((a, b) => {
+    return b.year - a.year
+})
+console.log(z)
+
+// 4. Sort the inventors by years lived
