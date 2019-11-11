@@ -96,9 +96,39 @@ const nineteen = devs.some(devs => {
     return 2019 - devs.year >= 19
 })
 
-console.log(nineteen)
+// console.log(nineteen)
   
-  // Array.prototype.every()
-  // 9. Is everyone 19 or older?
+// Array.prototype.every()
+// 9. Is everyone 19 or older?
+const everyNineteen = devs.every(devs => {
+    return 2019 - devs.year >= 19
+})
+
+// console.log(everyNineteen)
+
+const comments = [
+    { text: 'Love this!', id: 523423 },
+    { text: 'Super good', id: 823423 },
+    { text: 'You are the best', id: 2039842 },
+    { text: 'Ramen is my fav food ever', id: 123523 },
+    { text: 'Nice Nice Nice!', id: 542328 }
+];
+
+// Array.prototype.find()
+// 10. Find the comment with the id of 823423
+const idFind = comments.find(comment => {
+   return comment.id === 823423
+})
+
+// console.log(idFind)
+
+const idEvery = comments.findIndex(comment => {
+    
+})
+  
+
+
+
+
   
   
